@@ -19,7 +19,7 @@ const [enteredAge, setEnteredAge]=useState('');
             return;
         }
 
-        console.log(enteredUsername,enteredAge)
+        props.onAddUser(enteredUsername,enteredAge);
         setEnteredUsername('')
         setEnteredAge('');
     }
